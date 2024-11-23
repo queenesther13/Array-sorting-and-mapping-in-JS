@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array sorting in JS</title>
+    </head>
+    <body>
+        <p>Multiply every element in a array with 2</p>
+        <p id="product_value">
+            <script>
+                var numbers = [25,5,19,60];
+                function myFunction(num) {
+                    return num * 2;
+                }
+                var newarray = numbers.map(myFunction);
+                document.getElementById("product_value").innerHTML = newarray
+            </script>
+        </p>
+    </body>
+</html>

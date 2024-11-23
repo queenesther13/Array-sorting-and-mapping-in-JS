@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>array sorting in JS</title>
+    </head>
+    <body>
+        <h1>Sorting numbers</h1>
+        <button onclick="ascending()">Ascending order</button>
+        <button onclick="descending()">Descending order</button>
+        <p id="demo"></p>
+        <script>
+            var math_scores =[10,30,20,40,60,50,90,70,80];
+            function ascending(){
+                math_scores.sort(function(a,b){return a-b});
+                document.getElementById("demo").innerHTML=math_scores;
+            }
+            function descending(){
+                math_scores.sort(function(a,b){return b-a});
+                document.getElementById("demo").innerHTML=math_scores;
+            }
+        </script>
+    </body>
+</html>
